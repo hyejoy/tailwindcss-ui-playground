@@ -3,8 +3,30 @@ import Image from 'next/image';
 export default function Page() {
   return (
     <>
-      <main className="z-50 container mx-auto max-w-lg p-4">
-        <div className="grid grid-cols-4 gap-4">
+      <header className="z-50 bg-gray-800 p-4 text-white">
+        <nav className="container mx-auto flex items-center justify-between">
+          <div className="text-2xl font-bold">MyShop</div>
+          <ul className="flex space-x-4">
+            <li>
+              <a href="#" className="hover:underline">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:underline">
+                Products
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:underline">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main className="container mx-auto max-w-2xl px-4 py-8">
+        <div className="grid grid-cols-2 gap-4">
           <Image
             src="https://placehold.co/400x400.png?text=City"
             alt="City Image"
