@@ -1,5 +1,3 @@
-/** 16강 반응형 디자인 실습 */
-
 export default function page() {
   return (
     <>
@@ -25,9 +23,9 @@ export default function page() {
           </ul>
         </nav>
       </header>
-      <main className="container mx-auto mb-[74px] flex max-w-5xl gap-x-4 px-4 pt-24 pb-8 sm:mb-0">
-        <section className="w-full sm:w-4/6">
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+      <main className="container mx-auto mb-40 flex max-w-5xl gap-x-4 px-4 pt-24 pb-8">
+        <section className="w-full md:w-3/5">
+          <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             <img
               src="https://placehold.co/400x400.png?text=City"
               alt="City Image"
@@ -75,7 +73,7 @@ export default function page() {
             />
           </div>
         </section>
-        <aside className="hidden w-2/6 sm:block">
+        <aside className="hidden w-2/5 md:block">
           <div className="sticky top-16 rounded-lg border-2 border-gray-800 p-6">
             <h2 className="mb-4 text-xl font-bold">장바구니</h2>
             <div className="space-y-2">
@@ -98,8 +96,8 @@ export default function page() {
           </div>
         </aside>
       </main>
-      <div className="fixed right-0 bottom-0 left-0 block border-t-2 border-gray-800 bg-white p-4 sm:hidden">
-        <button className="w-full rounded bg-green-500 px-4 py-2 text-white hover:bg-green-600">
+      <div className="fixed right-0 bottom-0 left-0 border-t-2 border-gray-800 bg-white p-4 md:hidden">
+        <button className="mt-4 w-full rounded bg-green-500 px-4 py-2 text-white hover:bg-green-600">
           결제하기
         </button>
       </div>
