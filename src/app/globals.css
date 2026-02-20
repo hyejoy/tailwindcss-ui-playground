@@ -1,6 +1,7 @@
 /* src/app/globals.css */
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
 /* 6강에서 배운 커스텀 테마 설정 */
 @theme {
   --color-clifford: #da373d;
